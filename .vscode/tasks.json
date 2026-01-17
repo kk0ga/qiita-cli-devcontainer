@@ -1,0 +1,102 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Qiita: Login",
+      "type": "shell",
+      "command": "qiita login --credential /workspace/.qiita-cli",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Qiita: New Article",
+      "type": "shell",
+      "command": "qiita new",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Qiita: Preview",
+      "type": "shell",
+      "command": "qiita preview --credential /workspace/.qiita-cli",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Qiita: Publish All",
+      "type": "shell",
+      "command": "qiita publish --all --credential /workspace/.qiita-cli",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Qiita: Publish All (force)",
+      "type": "shell",
+      "command": "qiita publish --all --force --credential /workspace/.qiita-cli",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Copilot: Proofread Article",
+      "type": "shell",
+      "command": "bash",
+      "args": ["scripts/proofread-article.sh", "${file}"],
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Copilot: Review Article",
+      "type": "shell",
+      "command": "bash",
+      "args": ["scripts/review-article.sh", "${file}"],
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Qiita: Pull",
+      "type": "shell",
+      "command": "qiita pull --credential /workspace/.qiita-cli",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

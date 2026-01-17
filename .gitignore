@@ -1,0 +1,32 @@
+# Node.js dependencies
+node_modules/
+package-lock.json  # Optional: uncomment to ignore lock file for libraries
+npm-debug.log
+npm-error.log
+yarn-error.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/extensions
+
+# Ignore Qiita CLI credentials and related config if saved inside this repository
+# Default credential filename created by qiita-cli when using --credential <dir>
+credentials.json
+# Qiita CLI credential directory
+.qiita-cli/
+
+# GitHub Copilot CLI credentials and cache
+.copilot/.copilot-token
+.copilot/.copilot-cache
+
+# GitHub Copilot CLI config/state (devcontainer.json sets this in /workspace)
+.copilot-cli/

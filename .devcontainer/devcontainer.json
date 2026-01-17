@@ -1,0 +1,55 @@
+{
+  "name": "qiita-cli-devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        // Terminal profiles: define bash and sh, and set bash as the default profile
+        "terminal.integrated.profiles.linux": {
+          "bash": { "path": "/bin/bash" },
+          "sh": { "path": "/bin/sh" }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash",
+        // Format files automatically on save
+        "editor.formatOnSave": false,
+        // Remove trailing whitespace on save
+        "files.trimTrailingWhitespace": true,
+        // Ensure files end with a newline
+        "files.insertFinalNewline": true,
+        // Normalize line endings to LF
+        "files.eol": "\n",
+        // Visual guide at 80 characters to keep lines readable
+        "editor.rulers": [80],
+        // Render only boundary whitespace characters to spot mistakes
+        "editor.renderWhitespace": "boundary",
+        // Disable preview editors so files open in full tabs by default
+        "workbench.editor.enablePreview": false,
+        // Sync scrolling between Markdown editor and preview
+        "markdown.preview.scrollEditorWithPreview": true,
+        "markdown.preview.scrollPreviewWithEditor": true,
+        // Periodically fetch remote refs to keep Git state up-to-date
+        "git.autofetch": true
+      },
+      "extensions": [
+        // Markdown All in One: Markdown editing enhancements (table creation, etc.)
+        "yzhang.markdown-all-in-one",
+        // GitHub Pull Request: Manage PRs and Issues directly in VS Code
+        "github.vscode-pull-request-github",
+        // GitHub Copilot: AI pair programmer (install in container to enable in-remote)
+        "github.copilot",
+        "github.copilot-chat",
+        // GitHub Actions: Manage workflows and runs directly in VS Code
+        "github.vscode-github-actions"
+      ]
+    }
+  },
+  "forwardPorts": [8888],
+  "postCreateCommand": "qiita version"
+}

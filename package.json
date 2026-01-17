@@ -1,0 +1,13 @@
+{
+  "name": "qiita-cli-devcontainer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Devcontainer for writing Qiita articles with qiita-cli",
+  "scripts": {
+    "preview": "qiita preview --credential /workspace/.qiita-cli",
+    "login": "qiita login --credential /workspace/.qiita-cli",
+    "pull": "qiita pull --credential /workspace/.qiita-cli",
+    "publish:all": "qiita publish --all --credential /workspace/.qiita-cli",
+    "publish:all:force": "qiita publish --all --force --credential /workspace/.qiita-cli"
+  }
+}
