@@ -6,6 +6,8 @@ on:
     branches:
       - main
       - master
+    paths:
+      - "public/**/*.md"
   workflow_dispatch:
 
 permissions:
