@@ -30,3 +30,6 @@ credentials.json
 
 # GitHub Copilot CLI config/state (devcontainer.json sets this in /workspace)
 .copilot-cli/
+
+# Qiita remote cache (created by `qiita pull`)
+public/.remote/
