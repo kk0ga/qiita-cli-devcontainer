@@ -29,6 +29,8 @@ https://github.com/kk0ga/qiita-cli-devcontainer
 
 Qiita CLI 環境を手早く構築したい方は、参考にしてみてください。
 
+![ChatGPT Image 2026年1月18日 15_29_49.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3733390/588df938-8fd2-431f-a9b2-d68ead096b28.png)
+
 ## できること
 
 - Dev Container（Node.js 22 / Debian）で執筆環境を統一
@@ -112,6 +114,8 @@ qiita preview --credential /workspace/.qiita-cli
 
 ### 3) Copilot による校正・レビュー（任意）
 
+![ChatGPT Image 2026年1月18日 15_29_57.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3733390/b0338f80-7c2d-4c86-b3fb-720ed363752e.png)
+
 公開前に、Copilot で文章の校正や内容レビューを行えるようにしています。
 タスク「Copilot: Proofread Article」または「Copilot: Review Article」を実行することで行えます。
 
@@ -178,6 +182,8 @@ qiita publish --all --credential /workspace/.qiita-cli
 > 強制的に記事ファイルの内容を反映させたい場合は `--force` オプションを使用できます。
 
 #### GitHub Actions での自動公開
+
+![ChatGPT Image 2026年1月18日 15_30_01.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3733390/71e65601-9097-40a6-9f08-82bf46bbe20e.png)
 
 `.github/workflows/publish.yml` により、`main` / `master` への push 時に公開できます。
 
