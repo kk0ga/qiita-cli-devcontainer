@@ -1,14 +1,14 @@
 ---
 title: Copilot CLI で校正・レビューもできるQiita執筆環境をVS Codeに作った（Dev Container）
 tags:
-  - 'devcontainer'
-  - 'copilot'
-  - 'CopilotCLI'
-  - 'Qiita'
-  - 'QiitaCLI'
+  - Qiita
+  - devcontainer
+  - copilot
+  - QiitaCLI
+  - CopilotCLI
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-01-19T07:58:30+09:00'
+id: a507a013d69dd491f849
 organization_url_name: future-creation-factory
 slide: false
 ignorePublish: false
