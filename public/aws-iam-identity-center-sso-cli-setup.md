@@ -1,14 +1,14 @@
 ---
 title: AWS IAM Identity Center の設定手順と CLI での SSO 認証方法
 tags:
-  - IAM
-  - IAMIdentityCenter
   - AWS
-  - aws-cli
   - 初心者
+  - IAM
+  - aws-cli
+  - IAMIdentityCenter
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-02-23T14:11:11+09:00'
+id: 9f22618035d6dc728849
 organization_url_name: future-creation-factory
 slide: false
 ignorePublish: false
