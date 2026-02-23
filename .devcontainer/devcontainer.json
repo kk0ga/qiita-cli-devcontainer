@@ -17,6 +17,8 @@
           "sh": { "path": "/bin/sh" }
         },
         "terminal.integrated.defaultProfile.linux": "bash",
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000,
         // Format files automatically on save
         "editor.formatOnSave": false,
         // Remove trailing whitespace on save
